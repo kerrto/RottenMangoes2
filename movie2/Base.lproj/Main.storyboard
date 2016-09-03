@@ -51,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw5-cH-Jae">
-                                <rect key="frame" x="15" y="72" width="290" height="100"/>
+                                <rect key="frame" x="15" y="72" width="290" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="291" id="9ch-Fa-SyK"/>
                                     <constraint firstAttribute="height" constant="100" id="qsR-Za-JAq"/>
@@ -62,6 +62,7 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="9ch-Fa-SyK"/>
+                                        <exclude reference="qsR-Za-JAq"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -78,7 +79,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW0-1n-lGj">
-                                <rect key="frame" x="15" y="182" width="290" height="100"/>
+                                <rect key="frame" x="15" y="100" width="290" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="291" id="FX6-Jh-75O"/>
                                     <constraint firstAttribute="height" constant="100" id="lDM-Mi-MfS"/>
@@ -89,11 +90,12 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="FX6-Jh-75O"/>
+                                        <exclude reference="lDM-Mi-MfS"/>
                                     </mask>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M1-4V-rRI">
-                                <rect key="frame" x="14" y="292" width="291" height="100"/>
+                                <rect key="frame" x="14" y="128" width="291" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="291" id="wIL-u9-Bhz"/>
                                     <constraint firstAttribute="height" constant="100" id="xhp-t4-Bfo"/>
@@ -101,6 +103,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xhp-t4-Bfo"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
