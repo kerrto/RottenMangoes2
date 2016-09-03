@@ -98,8 +98,8 @@
                                        [self.mapView addAnnotation:marker];
                                        location = marker.coordinate;
                                    }
-//                                   
-//                                   [self.mapView setRegion:MKCoordinateRegionMake(location, MKCoordinateSpanMake(0.1, 0.1)) animated:YES];
+                                  
+                                   [self.mapView setRegion:MKCoordinateRegionMake(location, MKCoordinateSpanMake(0.1, 0.1)) animated:YES];
                                    
                                });
                            }
@@ -151,33 +151,25 @@
 #pragma mark MKMapViewDelegate
 
 
-//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
-//{
-//    
-//    if (annotation == mapView.userLocation)
-//    {
-//        return nil;
-//    }
-//    
-//    MKAnnotationView *pinView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"Theatre"];
-//    if (!pinView)
-//    {
-//        pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Theatre"];
-//        pinView.image = [UIImage imageNamed:@"stacks-image-530F043.png"];
-//        pinView.centerOffset = CGPointMake(0, -pinView.image.size.height/2);
-//    }
-//    
-//    return pinView;
-//}
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    
+    if (annotation == mapView.userLocation)
+    {
+        return nil;
+    }
+    
+    MKAnnotationView *pinView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"Theatre"];
+    if (!pinView)
+    {
+        pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Theatre"];
+       pinView.image = [UIImage imageNamed:@"stacks-image-530F043.png"];
+        pinView.centerOffset = CGPointMake(0, -pinView.image.size.height/2);
+    }
+    
+    return pinView;
+}
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+
 
 @end
